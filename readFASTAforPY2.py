@@ -74,6 +74,10 @@ def getcontant(file):
             sequence[count] += line
     for i in range(0,count+1):
         sequence[i] = sequence[i].replace('\n','')
+	# I obtained the contant from FASTA file that I download
+	# and wrote is twice into test file for testing 2 sequences.
+	# However, the test file ends a line with \r\n instead of \n.
+	sequence[i] = sequence[i].replace('\r','')
     return name,sequence
 
 def printseq(s):
