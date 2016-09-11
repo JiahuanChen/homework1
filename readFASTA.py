@@ -8,11 +8,15 @@ length = 70
 
 def checkfile(filename):
     try:
-        f = open(filename)
+        if open(filename).readline()[0] == '>':
+            return open(filename);
+        else: 
+            print('Not a FASTA file.')            
+            return 0
     except IOError:
         print('File not exist.')
         return  0;
-    return f;
+
 
 def checkinput(arg):
     if len(arg) < 2:            #no filename
