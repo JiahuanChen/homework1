@@ -11,7 +11,7 @@ import string
 #Number of characters in one line
 length = 70
 
-# check weather the file exist and is FASTA
+# check whether the file exist and is FASTA
 def checkfile(filename):
     try:
         if open(filename).readline()[0] == '>':
