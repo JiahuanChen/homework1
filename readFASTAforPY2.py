@@ -27,7 +27,7 @@ def checkfile(filename):
 # Reply different situations with different answers.
 # Return task: 0 for input error; 1 for complement and reverse;
 # 2 for RNA transcription
-def checkinput(arg)
+def checkinput(arg):
     if len(arg) < 2:
         print 'Didn\'t enter filename.' 
         return 0,0;
@@ -111,9 +111,7 @@ if __name__ == '__main__':
     elif task == 2:
         # transcript DNA to RNA
         name,sequence = func1(file)
-        sequence = fun2(sequence)
+        sequence = func2(sequence)
         output(name, sequence)
     elif task == 0:
         pass
-    
-
