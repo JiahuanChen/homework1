@@ -101,7 +101,7 @@ def func2(sequence):
     i = 0
     for s in sequence:
         sequence[i] = s.replace('T', 'U')
-        i += 0
+        i += 1
     return sequence
   
 # entrence of the sript
