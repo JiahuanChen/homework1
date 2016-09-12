@@ -67,7 +67,7 @@ def getcontant(file):
     count = -1
     for line in file.readlines():
         if line[0] == '>':
-            name.append(line.split()[0])
+            name.append(line)
             sequence.append('')
             count += 1
         else:
